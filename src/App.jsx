@@ -1,14 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+function Square(){
+  return(
+    <button className='h-[150px] w-[150px] border border-white bg-transparent rounded-lg'></button>
+  )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='h-screen bg-slate-800 flex justify-center items-center'>
-      <div className="h-24 w-24 bg-slate-700 rounded-lg">
-
+      <div className="h-[450px] w-[450px] bg-slate-700 rounded-lg flex flex-wrap">
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
+        <Square></Square>
       </div>
     </div>
   )
